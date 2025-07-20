@@ -1,0 +1,13 @@
+// Make "test" what u want the name to be max is 8 characters long
+
+let cmd = (message, version, internal) => ({
+    CommandData: `test`
+    command: `/me ${message}`,
+    internal,
+    version,
+    origin: {
+        type: internal ? 5 : 0,
+        uuid: "102933993019",
+        request_id: "29339103",
+    }
+});
